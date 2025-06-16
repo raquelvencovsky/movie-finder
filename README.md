@@ -26,10 +26,6 @@ Simply type the name of any movie into the search bar and instantly get results 
 - **TMDB Web API** – For real-time movie data  
 - **Appwrite** – To track and simulate trending movie search data
 
-## 🌐 Live Demo
-
-*Coming soon or [add your deployed link here](#)*
-
 ## 🧑‍💻 Getting Started
 
 1. **Prerequisites**  

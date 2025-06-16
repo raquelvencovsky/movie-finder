@@ -1,12 +1,69 @@
-# React + Vite
+# 🎬 Movie Finder Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Movie Finder Screenshot](public/screenshot2.png)
 
-Currently, two official plugins are available:
+A modern, responsive **movie search web application** built using **React.js**, **Tailwind CSS**, and **Vite**. It allows users to search for movies and view their details using the **TMDB (The Movie Database) API**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 Trending Movies
 
-## Expanding the ESLint configuration
+In addition to standard search, the app features a **Trending Movies** section. It uses **Appwrite** to simulate a backend database by recording how many times each movie has been searched. Trending movies are determined by their search frequency, offering a dynamic way to explore popular films within the app.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔍 Overview
+
+Simply type the name of any movie into the search bar and instantly get results including:
+
+- 🎞️ Movie titles  
+- 🗓️ Release dates  
+- 📝 Brief descriptions  
+- 🖼️ Movie posters  
+- 📈 Trending metrics based on user searches
+
+## 🚀 Technologies Used
+
+- **React.js** – For building the user interface  
+- **Tailwind CSS** – For responsive, utility-first styling  
+- **Vite** – For fast development and optimized builds  
+- **TMDB Web API** – For real-time movie data  
+- **Appwrite** – To track and simulate trending movie search data
+
+## 🧑‍💻 Getting Started
+
+1. **Prerequisites**  
+   - Node.js v14+  
+   - A TMDB API key (get one from [TMDB Developer Portal](https://developer.themoviedb.org/))  
+   - An Appwrite account and project (see [Appwrite.io](https://appwrite.io))
+
+2. **Installation**  
+   Clone the repo and install dependencies:
+
+    ```bash
+    git clone https://github.com/raquelvencovsky/movie-finder.git
+    cd movie-finder
+    npm install
+    ```
+
+3. **Configure Environment Variables**  
+   Create a `.env` file in the root of your project and add:
+
+    ```env
+    VITE_TMDB_API_KEY=your_tmdb_api_key_here
+    VITE_APPWRITE_PROJECT_ID=your_appwrite_project_id
+    VITE_APPWRITE_DATABASE_ID=your_appwrite_database_id
+    VITE_APPWRITE_COLLECTION_ID=your_appwrite_collection_id
+    ```
+
+4. **Run the Web App Locally**  
+   Start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+   The app will be available at [http://localhost:5173](http://localhost:5173)
+
+## ⚙️ Build for Production
+
+To create an optimized build:
+
+```bash
+npm run build

@@ -4,6 +4,9 @@
 
 A modern, responsive **movie search web application** built using **React.js**, **Tailwind CSS**, and **Vite**. It allows users to search for movies and view their details using the **TMDB (The Movie Database) API**.
 
+Check it out here:  
+👉 [https://joyful-ganache-901514.netlify.app](https://joyful-ganache-901514.netlify.app)
+
 ## 🔥 Trending Movies
 
 In addition to standard search, the app features a **Trending Movies** section. It uses **Appwrite** to simulate a backend database by recording how many times each movie has been searched. Trending movies are determined by their search frequency, offering a dynamic way to explore popular films within the app.
